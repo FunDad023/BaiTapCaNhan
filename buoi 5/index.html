@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>eportfolio developer | Lương Duy Thuận</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- AOS Animation -->
+    <link
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         MASTER LOADING
+    =============================== -->
+    <div id="master-loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h3>Loading Portfolio...</h3>
+            <p>Lương Duy Thuận</p>
+        </div>
+    </div>
+
+
+    <!-- ==============================
+         HEADER / NAVBAR
+    =============================== -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>ePortfolio<span>/&gt;</span>
+            </a>
+
+            <!-- Hamburger -->
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Mở menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation -->
+            <ul class="nav-menu" id="nav-menu">
+                <li>
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#care" class="nav-link">CARE</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ==============================
+             HERO
+        =============================== -->
+        <section id="home" class="hero">
+
+            <div class="hero-bg-circle circle-1"></div>
+            <div class="hero-bg-circle circle-2"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-text" data-aos="fade-up">
+
+                    <p class="hero-subtitle">
+                        Welcome to my
+                    </p>
+
+                    <h1>
+                        <span>eportfolio</span>
+                        developer
+                    </h1>
+
+                    <div class="typing-wrapper">
+                        <span class="typing-label">I'm </span>
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Sinh viên IT năm 2 tại LHU, yêu thích lập trình
+                        Web, JavaScript và phát triển các ứng dụng tương tác.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#about" class="btn btn-primary">
+                            Khám phá tôi
+                            <span>↓</span>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Liên hệ
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="code-window">
+
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>developer.js</span>
+                        </div>
+
+                        <div class="code-content">
+<pre><code><span class="code-purple">const</span> developer = {
+    name: <span class="code-green">"Lương Duy Thuận"</span>,
+    university: <span class="code-green">"LHU"</span>,
+    major: <span class="code-green">"IT"</span>,
+    year: <span class="code-number">2</span>,
+    location: <span class="code-green">"Đồng Nai"</span>,
+    passion: <span class="code-green">"Web Development"</span>
+};
+
+<span class="code-blue">console</span>.log(
+    <span class="code-green">"Hello World!"</span>
+);</code></pre>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             ABOUT
+        =============================== -->
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up"
+                >
+                    <span class="section-number">01.</span>
+                    <h2>About Me</h2>
+                    <div class="heading-line"></div>
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div
+                        class="about-image"
+                        data-aos="fade-up"
+                    >
+                        <div class="profile-card">
+
+                            <div class="profile-avatar">
+                                <span>LDT</span>
+                            </div>
+
+                            <div class="profile-status">
+                                <span class="status-dot"></span>
+                                Available for learning
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="about-content"
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                    >
+
+                        <span class="small-title">
+                            Hello, I'm
+                        </span>
+
+                        <h3>
+                            Lương Duy Thuận
+                        </h3>
+
+                        <p>
+                            Mình là sinh viên <strong>IT năm 2</strong>
+                            tại <strong>Đại học Lạc Hồng (LHU)</strong>.
+                            Mình sinh năm <strong>2007</strong> và hiện
+                            đang sinh sống tại <strong>Đồng Nai</strong>.
+                        </p>
+
+                        <p>
+                            Mình yêu thích lập trình Web và đặc biệt quan tâm
+                            đến JavaScript. Trong quá trình học tập, mình đã
+                            thực hành xây dựng HTTP Server, WebSocket,
+                            game bằng Canvas JavaScript và các giao diện
+                            Web sử dụng HTML/CSS.
+                        </p>
+
+                        <p>
+                            Mục tiêu của mình là không ngừng cải thiện kỹ năng,
+                            viết code tốt hơn và xây dựng những sản phẩm
+                            Web có hiệu năng cũng như trải nghiệm người dùng tốt.
+                        </p>
+
+
+                        <div class="about-info">
+
+                            <div class="info-item">
+                                <span class="info-label">Name</span>
+                                <span>Lương Duy Thuận</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Born</span>
+                                <span>2007</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">University</span>
+                                <span>LHU</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Major</span>
+                                <span>Information Technology</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Location</span>
+                                <span>Đồng Nai, Việt Nam</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Year</span>
+                                <span>2nd Year</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             SKILLS
+        =============================== -->
+        <section id="skills" class="section skills-section">
+
+            <div class="container">
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up"
+                >
+                    <span class="section-number">02.</span>
+                    <h2>My Skills</h2>
+                    <div class="heading-line"></div>
+                </div>
+
+
+                <div class="skills-intro" data-aos="fade-up">
+
+                    <p>
+                        Những kỹ năng mình đã và đang phát triển
+                        trong quá trình học tập và thực hành.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <!-- Skill 1 -->
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="0"
+                    >
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                &lt;/&gt;
+                            </div>
+
+                            <div>
+                                <h3>HTTP Server</h3>
+                                <span>Backend Development</span>
+                            </div>
+
+                            <strong>80%</strong>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div
+                                class="skill-progress"
+                                data-progress="80"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Skill 2 -->
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                ↔
+                            </div>
+
+                            <div>
+                                <h3>WebSocket</h3>
+                                <span>Real-time Communication</span>
+                            </div>
+
+                            <strong>70%</strong>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div
+                                class="skill-progress"
+                                data-progress="70"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Skill 3 -->
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                🎮
+                            </div>
+
+                            <div>
+                                <h3>Canvas JS Game</h3>
+                                <span>Game Development</span>
+                            </div>
+
+                            <strong>90%</strong>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div
+                                class="skill-progress"
+                                data-progress="90"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Skill 4 -->
+                    <div
+                        class="skill-card"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                #
+                            </div>
+
+                            <div>
+                                <h3>HTML / CSS</h3>
+                                <span>Web Interface</span>
+                            </div>
+
+                            <strong>60%</strong>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div
+                                class="skill-progress"
+                                data-progress="60"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             PROJECTS
+        =============================== -->
+        <section id="projects" class="section projects-section">
+
+            <div class="container">
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up"
+                >
+                    <span class="section-number">03.</span>
+                    <h2>My Projects</h2>
+                    <div class="heading-line"></div>
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article
+                        class="project-card"
+                        data-aos="fade-up"
+                    >
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-icon">
+                            🌐
+                        </div>
+
+                        <h3>HTTP Server</h3>
+
+                        <p>
+                            Xây dựng HTTP Server và tìm hiểu cách
+                            máy chủ xử lý request, response và phục vụ
+                            tài nguyên cho client.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTTP</span>
+                            <span>Server</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article
+                        class="project-card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-icon">
+                            ⚡
+                        </div>
+
+                        <h3>WebSocket App</h3>
+
+                        <p>
+                            Thực hành giao tiếp thời gian thực giữa
+                            client và server bằng công nghệ WebSocket.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>WebSocket</span>
+                            <span>Realtime</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+                    <article
+                        class="project-card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <div class="project-icon">
+                            🎮
+                        </div>
+
+                        <h3>Canvas Game</h3>
+
+                        <p>
+                            Xây dựng game 2D sử dụng HTML Canvas và
+                            JavaScript, tập trung vào animation,
+                            xử lý input và game loop.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Canvas</span>
+                            <span>JavaScript</span>
+                            <span>Game</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             REFACTORING PERFORMANCE
+        =============================== -->
+        <section class="section performance-section">
+
+            <div class="container">
+
+                <div
+                    class="performance-card"
+                    data-aos="fade-up"
+                >
+
+                    <div class="performance-icon">
+                        ⚙
+                    </div>
+
+                    <div class="performance-content">
+
+                        <span class="small-title">
+                            Development Mindset
+                        </span>
+
+                        <h2>Refactoring & Performance</h2>
+
+                        <p>
+                            Mình luôn chú trọng việc refactor code để
+                            cấu trúc chương trình rõ ràng, dễ bảo trì
+                            và hạn chế code dư thừa. Đồng thời quan tâm
+                            đến performance như tối ưu DOM, animation,
+                            loading và trải nghiệm người dùng.
+                        </p>
+
+                    </div>
+
+                    <div class="performance-stats">
+
+                        <div>
+                            <strong>Clean</strong>
+                            <span>Code</span>
+                        </div>
+
+                        <div>
+                            <strong>Fast</strong>
+                            <span>Performance</span>
+                        </div>
+
+                        <div>
+                            <strong>Better</strong>
+                            <span>UX</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CARE
+        =============================== -->
+        <section id="care" class="section care-section">
+
+            <div class="container">
+
+                <div
+                    class="section-heading"
+                    data-aos="fade-up"
+                >
+                    <span class="section-number">04.</span>
+                    <h2>CARE</h2>
+                    <div class="heading-line"></div>
+                </div>
+
+
+                <div class="care-intro" data-aos="fade-up">
+
+                    <p>
+                        CARE là những giá trị mình hướng đến trong
+                        quá trình học tập, làm việc nhóm và phát triển
+                        bản thân.
+                    </p>
+
+                </div>
+
+
+                <div class="care-grid">
+
+                    <div class="care-card" data-aos="fade-up">
+                        <span class="care-letter">C</span>
+                        <h3>Commitment</h3>
+                        <p>
+                            Cam kết với mục tiêu và hoàn thành
+                            công việc đã đặt ra.
+                        </p>
+                    </div>
+
+
+                    <div
+                        class="care-card"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <span class="care-letter">A</span>
+                        <h3>Adaptability</h3>
+                        <p>
+                            Chủ động học hỏi và thích nghi với
+                            công nghệ, môi trường mới.
+                        </p>
+                    </div>
+
+
+                    <div
+                        class="care-card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <span class="care-letter">R</span>
+                        <h3>Responsibility</h3>
+                        <p>
+                            Có trách nhiệm với công việc,
+                            sản phẩm và kết quả của bản thân.
+                        </p>
+                    </div>
+
+
+                    <div
+                        class="care-card"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <span class="care-letter">E</span>
+                        <h3>Excellence</h3>
+                        <p>
+                            Luôn cố gắng cải thiện chất lượng
+                            và hướng đến kết quả tốt hơn.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CONTACT
+        =============================== -->
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div
+                    class="contact-card"
+                    data-aos="fade-up"
+                >
+
+                    <span class="small-title">
+                        Get In Touch
+                    </span>
+
+                    <h2>
+                        Let's build something
+                        <span>awesome.</span>
+                    </h2>
+
+                    <p>
+                        Cảm ơn bạn đã ghé thăm ePortfolio của mình.
+                        Mình luôn sẵn sàng học hỏi, kết nối và cùng
+                        phát triển những dự án thú vị.
+                    </p>
+
+                    <a href="mailto:your-email@example.com" class="btn btn-primary">
+                        Say Hello →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <a href="#home" class="logo">
+                    <span>&lt;</span>LDT<span>/&gt;</span>
+                </a>
+
+                <p>
+                    © 2026 Lương Duy Thuận. All Rights Reserved.
+                </p>
+            </div>
+
+            <div class="footer-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Canvas</span>
+                <span>WebSocket</span>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
