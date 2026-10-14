@@ -48,22 +48,16 @@
                 <span>&lt;</span>ePortfolio<span>/&gt;</span>
             </a>
 
-            <!-- Hamburger -->
-            <button
-                class="hamburger"
-                id="hamburger"
-                aria-label="Mở menu"
-                aria-expanded="false"
-            >
+            <input class="menu-toggle" type="checkbox" id="menu-toggle">
+            <label class="hamburger" for="menu-toggle" aria-label="Mở hoặc đóng menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </label>
 
-            <!-- Navigation -->
-            <ul class="nav-menu" id="nav-menu">
+            <ul class="nav-menu">
                 <li>
-                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
 
                 <li>
@@ -116,8 +110,12 @@
 
                     <div class="typing-wrapper">
                         <span class="typing-label">I'm </span>
-                        <span id="typing-text"></span>
-                        <span class="cursor">|</span>
+                        <span class="typing-text" aria-label="Lương Duy Thuận, IT Student, Web Developer, JavaScript Developer">
+                            <span class="typing-word typing-word-name" aria-hidden="true">Lương Duy Thuận</span>
+                            <span class="typing-word typing-word-student" aria-hidden="true">IT Student</span>
+                            <span class="typing-word typing-word-web" aria-hidden="true">Web Developer</span>
+                            <span class="typing-word typing-word-js" aria-hidden="true">JavaScript Developer</span>
+                        </span>
                     </div>
 
                     <p class="hero-description">
@@ -353,7 +351,7 @@
                         <div class="skill-bar">
                             <div
                                 class="skill-progress"
-                                data-progress="80"
+                                style="--progress: 80%; --skill-order: 0"
                             ></div>
                         </div>
 
@@ -383,7 +381,7 @@
                         <div class="skill-bar">
                             <div
                                 class="skill-progress"
-                                data-progress="70"
+                                style="--progress: 70%; --skill-order: 1"
                             ></div>
                         </div>
 
@@ -413,7 +411,7 @@
                         <div class="skill-bar">
                             <div
                                 class="skill-progress"
-                                data-progress="90"
+                                style="--progress: 90%; --skill-order: 2"
                             ></div>
                         </div>
 
@@ -443,7 +441,7 @@
                         <div class="skill-bar">
                             <div
                                 class="skill-progress"
-                                data-progress="60"
+                                style="--progress: 60%; --skill-order: 3"
                             ></div>
                         </div>
 
@@ -795,9 +793,14 @@
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Main JS -->
-    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 80
+        });
+    </script>
 
 </body>
 </html>
